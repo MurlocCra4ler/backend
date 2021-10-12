@@ -145,7 +145,6 @@ const init_db = () => {
         // feedback
         logger.debug(`Connecting to "%s"...`, process.env.DATABASE_URL || constr);
 
-
         mongodb.MongoClient.connect(constr, {
             useUnifiedTopology: true,
             useNewUrlParser: true,
